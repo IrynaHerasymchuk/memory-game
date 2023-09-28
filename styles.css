@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.heading {
+  margin-top: 50px;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px;
+}
+
+.card {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 0.2s linear;
+}
+
+.flipped {
+  font-size: 24px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.timer {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 15px;
+}
+
+.start-button {
+  margin-right: 10px;
+}
